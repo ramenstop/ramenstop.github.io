@@ -1,0 +1,511 @@
+html{
+	overflow-y: overlay;
+}
+
+body, p, div, h1, h2, h3, h5, h6, table, tbody, tr, td, span, blockquote, abbr, address, cite, code, img, ul, ol, li, dl, dd, dt, form, label, fieldset, caption, input, textarea, button {
+	border:0;
+	outline:0;
+	font-family:'M PLUS Rounded 1c';
+	font-weight: normal;
+    font-style: normal; 
+	color:#fff;
+	vertical-align:baseline;
+	list-style:none;
+	text-decoration:none;
+	line-height:1.5em;
+	margin:0;
+	padding:0
+}
+
+a{
+	color:#fff;
+
+}
+
+p {margin: 0 0 20px 0; 
+font-weight: 500;
+line-height: 1.68421em; 
+}
+
+
+body {
+	background:#2c2c2c;
+	font-size:18.5px;
+}
+
+
+div#wrap {
+	width:980px;
+	position:relative;
+	margin:0 auto!important
+}
+
+div#sidebar {
+	width:220px;
+	height:100%;
+	float:left;
+	background:#2c2c2c;
+	border-right:1px solid #2e2f2f;
+	position:fixed
+}
+
+#logo {
+	text-align:center;
+	display:block;
+	border-bottom:1.5px solid #353535;
+	width:100%;
+	max-width: 250px;
+	margin:0 auto;
+	position:relative;
+	z-index:999;
+	opacity:1;
+	-webkit-transition:all 300ms;
+	-moz-transition:all 300ms;
+	-o-transition:all 300ms;
+	transition:all 300ms;
+	padding: 15px 0 0px 0;
+}
+
+#logo img{
+	margin-bottom:20px;
+	margin-top: 10px;
+}
+
+
+
+
+ul#navigation {
+	margin-top:20px;
+	margin-right:-5px;
+	position:relative;
+	width:220px;
+	z-index:999
+}
+ul#navigation li {
+	border:none;
+	background:none;
+	margin:0;
+	padding:0
+}
+ul#navigation li a:link, ul#navigation li a:visited {
+	text-decoration:none;
+	font-family:'M PLUS Rounded 1c';
+	font-weight:700;
+	margin-bottom:1px;
+	width:auto;
+	font-size:25px;
+	text-align:center;
+	padding-left:10px !important;
+	display:block;
+	transition:all 200ms;
+	-webkit-transition:all 200ms;
+	-moz-transition:all 200ms;
+	-o-transition:all 200ms;
+	padding:5px 10px 5px 0
+}
+ul#navigation li a:hover, ul#navigation li a.active {
+	background:#1b1b1b;
+	color:#FFF;
+}
+div#container {
+	width:730px;
+	float:right;
+	padding-right:25px;
+	left:-5px;
+	position:relative;
+	padding-top:0;
+	background:#BE1E2D;
+	min-height: 100vh;
+
+}
+
+
+div.page {
+	margin-bottom:5px solid #dbdbdb;
+	margin-bottom:0;
+	padding-top:0;
+
+	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+div.page_content {
+	padding:25px 0 40px 25px
+}
+div#container h3.page_title {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight:800;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	margin-left:25px;
+	font-size:52px;
+	color:#fcb748;
+	text-align:center;
+	border-bottom:1.5px solid #fff;
+	border-color: #fcb748;
+	line-height:1.5;
+	padding:20px 0 5px 0px
+}
+
+.social_icons {
+	margin:0 auto;
+	margin-top:20px;
+	line-height:45px;
+	height:45px;
+	width:142px;
+	
+}
+.social_icons li {
+	display:inline;
+	padding:0px !important;
+	margin:0px;
+}
+
+#contact_form input {
+	background:#FBB040;
+}
+fieldset#contact_form {
+	margin-top:5px;
+	width:100%;
+	float:left
+}
+fieldset#contact_form textarea {
+	width:97.5%;
+	background:#FBB040;
+	height:150px
+}
+img.no_border {
+	border:none!important
+}
+
+div.footer {
+	text-align:center;
+	margin-top:40px;
+	padding:15px 0
+}
+
+div.footer p{
+	font-size:12px;
+}
+
+.gotop {
+	position:fixed;
+	right:15px;
+	bottom:15px;
+	opacity:.3;
+	padding:10px;
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	z-index:999;
+	transition:all 300ms;
+	-webkit-transition:all 300ms
+}
+.gotop:hover {
+	color:#eee;
+	opacity:.7
+}
+.gotop.hidden {
+	display:none;
+	opacity:0
+}
+a.gotop {
+	text-decoration:none!important
+}
+
+
+
+h4.yellow {
+	font-family: 'M PLUS Rounded 1c';
+	font-weight:800;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 35px;
+	margin-bottom:25px;
+	margin-top:5px;
+}
+
+
+.clear {
+	clear:both
+}
+.space {
+	display:block;
+	float:left;
+	clear:both;
+	margin:10px 0
+}
+ul li {
+	line-height:1.5;
+	padding-left:15px;
+}
+a:link, a:visited {
+	text-decoration:underline
+}
+input, textarea, button {
+	clear:both;
+	float:left;
+	font-style:italic;
+	margin-bottom:1px;
+	padding:10px
+}
+input {
+	width:97.5%;
+}
+button {
+	cursor:pointer;
+	margin-right:-2px !important;
+	font-style:normal
+}
+ol li {
+	list-style:decimal inside;
+	padding:5px 0
+}
+blockquote {
+	border-left:5px solid #7cb3d3;
+	font-style:italic;
+	padding:10px;
+	margin:20px;
+}
+
+a#logo:hover, a.facebook:hover, a.twitter:hover, a.linkedin:hover, a.dribbble:hover, div.image_gallery img:hover {
+	opacity:.5
+}
+fieldset#contact_form button, .right {
+	float:right
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+.prev {
+	position:absolute;
+	margin-left:-5px;
+	margin-top: 20px;
+}
+.next {
+	position:absolute;
+	margin-left: 680px;
+	margin-top: 20px;
+}
+.button {
+	color:#fff;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	/* IE hacks */
+    zoom: 1;
+ *display: inline;
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	padding: 0.5em 1em;
+	font-size:12px;
+	margin: 0;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	outline: none;
+	background-color: #FBB040;
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	-o-background-clip: padding-box;
+	/*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	/* IE hacks */
+    zoom: 1;
+ *display: inline;
+}
+.button:hover, .button:focus, .button:active {
+	border-color: #FBB040;
+	text-decoration: none;
+	color: #fff;
+	background-color: #35779d;
+}
+.button:active, .button.active {
+	color: #fff;
+	background-color: #12415c;
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+
+
+
+div.img {margin-right: 10px;
+	margin-top:20px;
+    
+    float: left; 
+    border:none;
+
+}
+
+.grid{
+
+	margin-left:-.5vw;
+	margin-right:-.5vw;
+	margin-top: -1.5vw;
+	font-size: 0;
+	display: -ms-flexbox;
+	-ms-flexbox-wrap:wrap;
+	-ms-flexbox-direciton:column;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: flex;
+
+	
+}
+
+.grid a{
+	-webkit-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	width: 200px;
+	margin: .5vw;
+}
+
+.grid a img {
+	width: 100%;
+	height: auto;
+}
+
+.grid a img.picture2 {
+
+	display: block;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	width: 55%;
+	height: auto;
+}
+
+@media screen and (max-width: 400px) {
+	.class div {
+		margin: .5vw;
+	}
+
+	.class {
+		padding: 0;
+	}
+}
+
+
+.1text{
+
+	float:right;
+}
+
+img.picture1{
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-top: 8px;
+	float: left;
+}
+
+div.page_content div.grid img.picture1a{
+	margin:20px auto;
+}
+
+div.page_content div.grid img.picture2a{
+	margin:20px auto;
+}
+
+div.page_content div.grid img.picture3a{
+	margin:20px auto;
+}
+
+
+.thumbnail {
+  position:relative;
+  color:white;
+  display:block;
+}
+
+.thumbnail:hover {
+  cursor:pointer;
+  color:#fff490;
+}
+
+.overlay {
+  display:none;
+  text-align: center;
+
+}
+
+
+.thumbnail:hover .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+   background: #1d1f21;
+    width:100%;
+  height:100%;
+   opacity:0.9;
+
+}
+
+
+h4.ramen_title {
+font-family: 'M PLUS Rounded 1c';
+   color: #fcb748;
+       font-weight: 800;
+  font-size:32px;
+  letter-spacing:1px;
+  line-height:1.2;
+
+}
+
+
+
+
+.footer {clear:both;}
+
+
